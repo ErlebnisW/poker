@@ -62,7 +62,7 @@ class BCTrainer(Trainer):
 
                 for key,value in mini_batch.items():
                     if isinstance(value,np.ndarray):
-                        value=torch.FloatTensor(value)
+                        value=torch.FloatTensor(value.copy())
                     mini_batch[key]=value.to(policy.device)
 
                 tmp_opt_result = self.loss(mini_batch)

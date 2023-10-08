@@ -37,7 +37,7 @@ class DQNTrainer(Trainer):
         # move data to gpu
         for key,value in batch.items():
             if isinstance(value,np.ndarray):
-                value=torch.FloatTensor(value)
+                value=torch.FloatTensor(value.copy())
             batch[key]=value.to(policy.device)
         global_timer.time("move_to_gpu_start","move_to_gpu_end","move_to_gpu")
         
