@@ -1,5 +1,6 @@
 expr_group: leduc_poker
 expr_name: test_dqns
+mode: disabled
 log_dir: logs
 seed: 0
 eval_only: False
@@ -57,6 +58,7 @@ policy_data_manager:
       missing_value: -100
         
 monitor:
+  type: remote
   distributed:
     resources:
       num_cpus: 1

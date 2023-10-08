@@ -72,6 +72,7 @@ class RolloutWorker:
         rollout_length = (
             self.cfg.rollout_length if not eval else self.cfg.eval_rollout_length
         )
+
         results = self.rollout_func(
             eval,
             self,

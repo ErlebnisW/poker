@@ -1,5 +1,6 @@
 expr_group: kuhn_poker
 expr_name: test_dqns
+mode: disbled
 log_dir: logs
 seed: 0
 eval_only: False

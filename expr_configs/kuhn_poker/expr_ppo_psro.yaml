@@ -1,5 +1,6 @@
 expr_group: kuhn_poker
 expr_name: test_ppo
+mode: disabled
 log_dir: logs             #log directory
 seed: 0
 eval_only: False            #True if only want evaluation
@@ -99,7 +100,7 @@ rollout_manager:
         num_cpus: 1
     rollout_length: 3001
     eval_rollout_length: 3001
-    sample_length: 1000
+    sample_length: 0
     padding_length: # of not use in gr_football
     rollout_func_name: "rollout_func_aec"
     episode_mode: 'traj'

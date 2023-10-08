@@ -108,6 +108,8 @@ class MAPPO(Policy):
             self.feature_encoder = model.FeatureEncoder(**FE_cfg)
         else:
             self.feature_encoder = model.FeatureEncoder()
+            
+        self.encoder = self.feature_encoder
 
         # jh: re-define observation space based on feature encoder
         global_observation_space = self.feature_encoder.global_observation_space

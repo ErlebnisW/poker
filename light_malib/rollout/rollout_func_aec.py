@@ -131,7 +131,7 @@ def rollout_func(
     # EpisodeKey.STATE_VALUE
 
     step_data_list=[]
-    for step_ctr,player_id in enumerate(env.agent_id_iter()):
+    for step_ctr, player_id in enumerate(env.agent_id_iter()):
         agent_id=env.id_mapping(player_id)
         agent_data=env.get_curr_agent_data(agent_id)
         

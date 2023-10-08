@@ -92,7 +92,7 @@ class RolloutManager:
         self.policy_id = rollout_desc.policy_id
         self.stop_flag = False
         self.stop_flag_lock = threading.Lock()
-        
+
         if rollout_desc.sync:
             self.sync_rollout(rollout_desc)
         else:
