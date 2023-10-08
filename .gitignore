@@ -139,3 +139,4 @@ logs*
 demos
 prof/
 .DS_Store
+wandb
